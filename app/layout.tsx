@@ -22,10 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={montserrat.className}>
-      <body className="lg:grid lg:grid-cols-12">
+      <body>
         <Header />
-        <div className="col-span-2 hidden lg:block"></div>
-        <main className="lg:col-span-10 h-[200dvh]">{children}</main>
+        <main className="ms-[330px]">{children}</main>
       </body>
     </html>
   );
