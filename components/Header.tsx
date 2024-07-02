@@ -4,7 +4,7 @@ import Logo from "@/public/logo.png";
 import Image from "next/image";
 function Header() {
   return (
-    <div className="h-screen flex flex-col bg-primary text-white text-[13px] fixed">
+    <div className="h-[100dvh] flex flex-col bg-primary text-white text-[13px] fixed">
       <div className="flex justify-center items-center">
         <Image src={Logo} alt="brand" width={300} />
       </div>
