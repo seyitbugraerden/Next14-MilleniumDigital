@@ -4,7 +4,7 @@ import Logo from "@/public/logo.png";
 import Image from "next/image";
 function Header() {
   return (
-    <div className="h-[100dvh] flex flex-col bg-primary text-white text-[13px] fixed">
+    <div className="h-[100dvh] hidden lg:flex flex-col bg-primary text-white text-[13px] fixed">
       <div className="flex justify-center items-center">
         <Image src={Logo} alt="brand" width={300} />
       </div>
@@ -105,7 +105,7 @@ function Header() {
           </div>
         </nav>
       </div>
-      <p className="text-hover text-center mx-8 mt-auto mb-4">
+      <p className="text-hover text-center mx-8 mt-auto mb-4 text-xs">
         Copyright ©2024 All rights reserved
       </p>
     </div>

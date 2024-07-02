@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en" className={montserrat.className}>
       <body>
         <Header />
-        <main className="ms-[330px]">{children}</main>
+        <main className="lg:ms-[400px]">{children}</main>
       </body>
     </html>
   );
