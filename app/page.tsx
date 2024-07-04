@@ -1,15 +1,13 @@
+import AboutUs from "@/components/AboutUs";
 import { ImagesSliderDemo } from "@/components/ImagesSliderDemo";
-import { FlipWords } from "@/components/ui/flip-words";
+import { StickyScrollRevealDemo } from "@/components/StickyScrollRevealDemo";
 
 export default function Home() {
-  
-
   return (
     <>
       <ImagesSliderDemo />
-      <h1>
-        Dilediğiniz 
-      </h1>
+      <AboutUs />
+      <StickyScrollRevealDemo />
     </>
   );
 }

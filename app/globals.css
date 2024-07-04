@@ -18,6 +18,9 @@ p {
   text-align: justify;
 }
 
+section{
+  padding: 60px 0px;
+}
 .line {
   position: relative;
   margin-bottom: 16px;
