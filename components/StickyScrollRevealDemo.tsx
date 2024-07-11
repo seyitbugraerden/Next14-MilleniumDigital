@@ -54,7 +54,7 @@ const content = [
 export function StickyScrollRevealDemo() {
   return (
     <div className="p-10">
-      <h4 className="text-center py-6">Hizmetlerimiz</h4>
+      <h4 className="text-center py-6 pt-24">Hizmetlerimiz</h4>
       <StickyScroll content={content} />
     </div>
   );
