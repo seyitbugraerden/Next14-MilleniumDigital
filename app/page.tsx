@@ -13,11 +13,7 @@ export default function Home() {
       <BentoGridDemo />
       <section>
         <h4 className="text-center pt-16 pb-8">Blog</h4>
-        <div className="grid grid-cols-3 gap-24 scale-[0.9] origin-top">
-          <ThreeDCardDemo />
-          <ThreeDCardDemo className="lg:hidden"/>
-          <ThreeDCardDemo className="lg:hidden"/>
-        </div>
+        
       </section>
     </>
   );
