@@ -1,8 +1,13 @@
+'use client'
 import Link from "next/link";
 import React from "react";
 import Logo from "@/public/logo.png";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+
 function Header() {
+  const router = usePathname()
+  console.log(router)
   return (
     <div className="h-[100dvh] hidden lg:flex flex-col bg-primary text-white text-[13px] fixed">
       <div className="flex justify-center items-center">
@@ -12,16 +17,16 @@ function Header() {
         <nav className="flex flex-col gap-6">
           <div>
             <Link
-              href="#"
-              className="pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500"
+              href="/"
+              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${router === '/' ? 'bg-hover' : ""}`}
             >
               Ana Sayfa
             </Link>
           </div>
           <div>
             <Link
-              href="#"
-              className="pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500"
+              href="/hakkimizda"
+              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${router === '/hakkimizda' ? 'bg-hover' : ""}`}
             >
               Hakkımızda
             </Link>
@@ -44,9 +49,9 @@ function Header() {
           </div>
           <div>
             <Link
-              href="#"
-              className=" pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500"
-            >
+              href="/iletisim"
+              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${router === '/iletisim' ? 'bg-hover' : ""}`}
+              >
               İletişim
             </Link>
           </div>
