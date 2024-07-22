@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 
 function Header() {
   const router = usePathname()
+  const routerLink = router.split('/')
   return (
     <div className="h-[100dvh] hidden lg:flex flex-col bg-primary text-white text-[13px] fixed">
       <div className="flex justify-center items-center">
@@ -17,7 +18,7 @@ function Header() {
           <div>
             <Link
               href="/"
-              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${router === '/' ? 'bg-hover' : ""}`}
+              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[1] === '' ? 'bg-hover' : ""}`}
             >
               Ana Sayfa
             </Link>
@@ -25,7 +26,7 @@ function Header() {
           <div>
             <Link
               href="/hakkimizda"
-              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${router === '/hakkimizda' ? 'bg-hover' : ""}`}
+              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[1] === 'hakkimizda' ? 'bg-hover' : ""}`}
             >
               Hakkımızda
             </Link>
@@ -33,7 +34,7 @@ function Header() {
           <div>
             <Link
               href="/hizmetlerimiz"
-              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${router === '/hizmetlerimiz' ? 'bg-hover' : ""}`}
+              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[1] === 'hizmetlerimiz' ? 'bg-hover' : ""}`}
             >
               Hizmetlerimiz
             </Link>
@@ -49,7 +50,7 @@ function Header() {
           <div>
             <Link
               href="/iletisim"
-              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${router === '/iletisim' ? 'bg-hover' : ""}`}
+              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[1] === 'iletisim' ? 'bg-hover' : ""}`}
               >
               İletişim
             </Link>
@@ -62,7 +63,7 @@ function Header() {
           <div>
             <Link
               href="#"
-              className="pe-[24px] ps-[50px] py-3 bg-hover transition duration-500"
+              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[2] === 'web-site-cozumleri' ? 'bg-hover' : ""}`}
             >
               Web Site Çözümleri
             </Link>
@@ -70,7 +71,7 @@ function Header() {
           <div>
             <Link
               href="#"
-              className="pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500"
+              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[2] === 'mobil-uygulama-cozumleri' ? 'bg-hover' : ""}`}
             >
               Mobil Uygulama Çözümleri
             </Link>
@@ -78,7 +79,7 @@ function Header() {
           <div>
             <Link
               href="#"
-              className="pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500"
+              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[2] === 'profesyonel-marka-yonetimi' ? 'bg-hover' : ""}`}
             >
               Profesyonel Marka Yönetimi
             </Link>
@@ -86,7 +87,7 @@ function Header() {
           <div>
             <Link
               href="#"
-              className="pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500"
+              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[2] === 'sosyal-medya-yonetimi' ? 'bg-hover' : ""}`}
             >
               Sosyal Medya Yönetimi
             </Link>
@@ -94,7 +95,7 @@ function Header() {
           <div>
             <Link
               href="#"
-              className=" pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500"
+              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[2] === 'e-ticaret-cozumleri' ? 'bg-hover' : ""}`}
             >
               E-Ticaret Çözümleri
             </Link>
@@ -102,7 +103,7 @@ function Header() {
           <div>
             <Link
               href="#"
-              className=" pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500"
+              className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[2] === 'crm-sistemleri' ? 'bg-hover' : ""}`}
             >
               CRM Sistemleri
             </Link>
