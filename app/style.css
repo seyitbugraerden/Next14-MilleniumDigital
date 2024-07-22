@@ -1,0 +1,109 @@
+:root {
+  --yesil-color: #555a50;
+  --link-color: #cfbe8c;
+}
+/* Hizmetlerimiz */
+.hizmetler .card-area {
+  width: 100%;
+  height: 50vh;
+  transition: 500ms;
+}
+
+.hizmetler .card-area img {
+  width: 100%;
+  height: 50vh;
+  filter: opacity(0);
+  z-index: -2;
+  transition: 500ms;
+}
+
+.hizmetler .card-area img {
+  filter: opacity(1) brightness(0.3);
+}
+
+.hizmetler .card-area:hover img {
+  filter: opacity(0.9) brightness(0.3);
+}
+
+.hizmetler .card-area::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  transform: translate(10px, 10px);
+  transition: 500ms;
+}
+
+.hizmetler .card-area::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  width: 0px;
+  height: 0px;
+  transform: translate(-10px, -10px);
+  transition: 500ms;
+}
+
+.hizmetler .card-area:hover::before {
+  width: 250px;
+  height: 250px;
+  border-top: 3px solid var(--link-color);
+  border-left: 3px solid var(--link-color);
+  z-index: 999;
+}
+
+.hizmetler .card-area:hover::after {
+  width: 250px;
+  height: 250px;
+  border-right: 3px solid var(--link-color);
+  border-bottom: 3px solid var(--link-color);
+}
+
+.hizmetler .card-area:hover .text-area {
+  color: white !important;
+  transition: 500ms;
+}
+
+.hizmetler .card-area .text-area {
+  position: absolute;
+  color: white;
+  font-size: 46px;
+  top: 15%;
+  left: 40px;
+  z-index: 9;
+  margin-right: 50px;
+  height: 80%;
+  overflow: hidden;
+  transition: 500ms;
+  padding: 5% 5%;
+}
+
+.hizmetler .card-area .text-area h2 {
+  font-size: 2rem;
+  color: var(--link-color);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.hizmetler .card-area .text-area p:nth-child(3) {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.hizmetler .row .active img {
+  filter: opacity(1) brightness(0.4);
+}
+
+.hizmetler .row .active .text-area {
+  color: white !important;
+}
+
+@media (max-width: 762px) {
+  .hizmetler p {
+    @apply line-clamp-4;
+  }
+}
