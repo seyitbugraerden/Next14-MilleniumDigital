@@ -62,7 +62,7 @@ function Header() {
           </h2>
           <div>
             <Link
-              href="#"
+              href="/hizmetlerimiz/web-site-cozumleri"
               className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[2] === 'web-site-cozumleri' ? 'bg-hover' : ""}`}
             >
               Web Site Çözümleri
@@ -70,7 +70,7 @@ function Header() {
           </div>
           <div>
             <Link
-              href="#"
+              href="/hizmetlerimiz/mobil-uygulama-cozumleri"
               className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[2] === 'mobil-uygulama-cozumleri' ? 'bg-hover' : ""}`}
             >
               Mobil Uygulama Çözümleri
@@ -78,7 +78,7 @@ function Header() {
           </div>
           <div>
             <Link
-              href="#"
+              href="/hizmetlerimiz/profesyonel-marka-yonetimi"
               className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[2] === 'profesyonel-marka-yonetimi' ? 'bg-hover' : ""}`}
             >
               Profesyonel Marka Yönetimi
@@ -86,7 +86,7 @@ function Header() {
           </div>
           <div>
             <Link
-              href="#"
+              href="/hizmetlerimiz/sosyal-medya-yonetimi#"
               className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[2] === 'sosyal-medya-yonetimi' ? 'bg-hover' : ""}`}
             >
               Sosyal Medya Yönetimi
@@ -94,7 +94,7 @@ function Header() {
           </div>
           <div>
             <Link
-              href="#"
+              href="/hizmetlerimiz/e-ticaret-cozumleri"
               className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[2] === 'e-ticaret-cozumleri' ? 'bg-hover' : ""}`}
             >
               E-Ticaret Çözümleri
@@ -102,7 +102,7 @@ function Header() {
           </div>
           <div>
             <Link
-              href="#"
+              href="/hizmetlerimiz/crm-sistemleri"
               className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${routerLink[2] === 'crm-sistemleri' ? 'bg-hover' : ""}`}
             >
               CRM Sistemleri
