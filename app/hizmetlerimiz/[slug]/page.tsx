@@ -5,14 +5,18 @@ import Image from "next/image";
 const HizmetDetay: React.FC<any> = ({ params }) => {
   return (
     <section className="grid grid-cols-2 py-12 h-screen">
-      <div className="bg-white h-[80%] flex flex-col justify-center my-auto lg:translate-x-12 px-8 col-span-2 lg:col-span-1">
-        <h4>{params.slug === 'web-site-cozumleri' && "Web Site Çözümleri" ||
-            params.slug === 'mobil-uygulama-cozumleri' && "Mobil Uygulama Çözümleri" ||
-            params.slug === 'profesyonel-marka-yonetimi' && "Profesyonel Marka Yönetimi" ||
-            params.slug === 'sosyal-medya-yonetimi' && "Sosyal Medya Yönetimi" ||
-            params.slug === 'e-ticaret-cozumleri' && "E-Ticaret Çözümleri " ||
-            params.slug === 'crm-sistemleri' && "CRM Çözümleri "
-            }</h4>
+      <div className="bg-white flex flex-col justify-center my-auto lg:translate-x-12 px-8 py-6 col-span-2 lg:col-span-1 overflow-hidden">
+        <h4>
+          {(params.slug === "web-site-cozumleri" && "Web Site Çözümleri") ||
+            (params.slug === "mobil-uygulama-cozumleri" &&
+              "Mobil Uygulama Çözümleri") ||
+            (params.slug === "profesyonel-marka-yonetimi" &&
+              "Profesyonel Marka Yönetimi") ||
+            (params.slug === "sosyal-medya-yonetimi" &&
+              "Sosyal Medya Yönetimi") ||
+            (params.slug === "e-ticaret-cozumleri" && "E-Ticaret Çözümleri ") ||
+            (params.slug === "crm-sistemleri" && "CRM Çözümleri ")}
+        </h4>
         <p>
           <strong>Millenium Digital</strong> , dijital dünyada fark yaratmak
           isteyen işletmelere yenilikçi ve kapsamlı çözümler sunan bir ajanstır.

@@ -4,7 +4,7 @@ import Image from "next/image";
 function Hakkimizda() {
   return (
     <section className="grid grid-cols-2 py-12 h-screen">
-      <div className="bg-white h-[80%] flex flex-col justify-center my-auto lg:translate-x-12 px-8 col-span-2 lg:col-span-1">
+      <div className="bg-white flex flex-col justify-center my-auto lg:translate-x-12 px-8 py-6 col-span-2 lg:col-span-1 overflow-hidden">
         <h4>Hakkımızda</h4>
         <p>
           <strong>Millenium Digital</strong> , dijital dünyada fark yaratmak

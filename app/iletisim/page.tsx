@@ -1,7 +1,7 @@
 function Iletisim() {
   return (
     <section className="grid grid-cols-2 py-12 h-screen">
-      <div className="bg-white h-[80%] flex flex-col justify-center my-auto lg:-translate-y-12 lg:translate-x-12 px-8 col-span-2 lg:col-span-1">
+      <div className="bg-white flex flex-col justify-center my-auto lg:translate-x-12 px-8 py-6 col-span-2 lg:col-span-1 overflow-hidden">
         <h4>İletişim</h4>
         <p>
           <strong>Adres : </strong>Kızılırmak Mah. Dumlupınar Bulv. No:3 Next
