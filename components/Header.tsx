@@ -14,7 +14,7 @@ function Header() {
   return (
     <>
       <div
-        className={`h-[100dvh] flex flex-col bg-primary text-white text-[13px] fixed z-[999] duration-500 ${
+        className={`h-[100dvh] lg:left-0 flex flex-col bg-primary text-white text-[13px] fixed z-[999] duration-500 ${
           isOpen ? "left-0" : "-left-[500px]"
         }`}
       >
