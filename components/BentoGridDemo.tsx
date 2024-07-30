@@ -12,7 +12,7 @@ import {
 
 export function BentoGridDemo() {
   return (
-    <section className="pt-16 py-16">
+    <section>
       <h4 className="text-center py-12">Başlıca Projelerimiz</h4>
       <BentoGrid className="max-w-4xl mx-auto">
         {items.map((item, i) => (
