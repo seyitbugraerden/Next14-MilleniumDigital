@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import "./style.css"
+import "./style.css";
 import Header from "@/components/Header";
+import HamburgerButton from "@/components/HamburgerButton";
 
 const montserrat = Montserrat({
   weight: ["300", "400", "500", "700"],
@@ -13,7 +14,8 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Millenium Digital",
-  description: "Millenium Digital, talepleriniz için en hızlı ve en keskin çözümler.",
+  description:
+    "Millenium Digital, talepleriniz için en hızlı ve en keskin çözümler.",
 };
 
 export default function RootLayout({
