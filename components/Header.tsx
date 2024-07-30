@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Logo from "@/public/logo.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -9,9 +9,15 @@ import Hamburger from "hamburger-react";
 function Header() {
   const router = usePathname();
   const routerLink = router.split("/");
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <>
-      <div className="h-[100dvh] hidden lg:flex flex-col bg-primary text-white text-[13px] fixed z-[999]">
+      <div
+        className={`h-[100dvh] flex flex-col bg-primary text-white text-[13px] fixed z-[999] duration-500 ${
+          isOpen ? "left-0" : "-left-[500px]"
+        }`}
+      >
         <div className="flex justify-center items-center">
           <Image src={Logo} alt="brand" width={300} />
         </div>
@@ -138,9 +144,9 @@ function Header() {
           Copyright ©2024 All rights reserved
         </p>
       </div>
-      <div className="fixed bottom-5 right-5 z-[999]">
+      <div className="fixed bottom-5 right-5 z-[999] lg:hidden">
         <div className="bg-hover p-3 rounded-full scale-[.5] origin-bottom-right border-0 outline-0">
-          <Hamburger color="#fff" />
+          <Hamburger color="#fff" toggled={isOpen} toggle={setOpen} />
         </div>
       </div>
     </>
