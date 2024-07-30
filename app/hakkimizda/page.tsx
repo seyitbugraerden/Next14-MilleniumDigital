@@ -1,7 +1,6 @@
 import React from "react";
 import about from "@/public/about.png";
 import Image from "next/image";
-import { FeaturesSectionDemo } from "@/components/ui/about-detail";
 function Hakkimizda() {
   return (
     <>
