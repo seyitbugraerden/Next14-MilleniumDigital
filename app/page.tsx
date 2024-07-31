@@ -1,5 +1,6 @@
 import AboutUs from "@/components/AboutUs";
 import { BentoGridDemo } from "@/components/BentoGridDemo";
+import Blog from "@/components/Blog";
 import { ImagesSliderDemo } from "@/components/ImagesSliderDemo";
 import { FeaturesSectionDemo } from "@/components/ui/about-detail";
 
@@ -10,9 +11,7 @@ export default function Home() {
       <AboutUs />
       <FeaturesSectionDemo />
       <BentoGridDemo />
-      <section>
-        <h4 className="text-center pt-16 pb-8">Blog</h4>
-      </section>
+      <Blog />
     </>
   );
 }
