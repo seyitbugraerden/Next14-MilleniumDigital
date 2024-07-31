@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-function BlogCard() {
+const BlogCard: React.FC<any> = ({ className }) => {
   return (
-    <div>
+    <div className={`${className}`}>
       <Image
         src="https://picsum.photos/1920/1080"
         alt="blog image"
@@ -21,7 +21,7 @@ function BlogCard() {
           iure maiores voluptatem iste accusamus dignissimos quidem consequatur
           aliquam architecto.
         </p>
-        <div className="flex flex-row items-center gap-3" >
+        <div className="flex flex-row items-center gap-3">
           <div>
             <Image
               src="https://picsum.photos/500/500"
@@ -39,6 +39,6 @@ function BlogCard() {
       </div>
     </div>
   );
-}
+};
 
 export default BlogCard;
