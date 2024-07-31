@@ -9,7 +9,7 @@ const BlogCard: React.FC<any> = ({ className }) => {
         alt="blog image"
         width={500}
         height={500}
-        className="w-100 rounded-t-2xl"
+        className="w-full rounded-t-2xl"
       />
       <div className="p-4 bg-[#e3e3e3] rounded-b-2xl">
         <span className="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg px-2 py-1 text-white text-[10px]">

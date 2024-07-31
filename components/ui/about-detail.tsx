@@ -82,7 +82,7 @@ const Feature = ({
 }) => {
   return (
     <div
-      className={`flex flex-col lg:border-r border-primary py-10 relative group/feature cursor-pointer
+      className={`flex flex-col lg:border-r bg-[#ffffffc2] border-primary py-10 relative group/feature cursor-pointer
     ${index === 0 || index === 4 ? "lg:border-l border-primary" : ""}
     ${index < 4 ? "lg:border-b border-primary" : ""}
   `}
