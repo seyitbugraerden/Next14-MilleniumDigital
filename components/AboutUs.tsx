@@ -4,7 +4,19 @@ function AboutUs() {
   return (
     <section className="pt-24">
       <h4 className="text-center">Biz Kimiz?</h4>
-      <p className="text-kg text-primary lg:max-w-6xl mx-auto mt-10 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente odit vero consectetur sit pariatur quisquam earum placeat illo enim magni cupiditate porro maiores voluptatem neque voluptates, nisi vitae repellendus dolorem commodi velit harum. Eius quasi maiores et cum quod explicabo laborum provident deserunt suscipit, quis illo ipsa ducimus magnam corrupti excepturi optio? Ab, animi laudantium laboriosam, qui sed eveniet rem quaerat sit dicta consequuntur quo dolores aliquid nemo et possimus voluptas nesciunt amet in? Velit molestiae et soluta id quaerat minima maiores nesciunt quas, accusantium illo autem sequi debitis provident placeat labore consequatur. Quas non excepturi iste quisquam numquam! Tempora?</p>
+      <p className="text-kg text-primary lg:max-w-6xl mx-auto mt-10 text-center text-justify">
+        Millenium Digital , dijital dünyada fark yaratmak isteyen işletmelere
+        yenilikçi ve kapsamlı çözümler sunan bir ajanstır. Amacımız,
+        müşterilerimizin dijital varlıklarını güçlendirmek ve büyümelerini
+        sağlamaktır.
+        <br />
+        Uzman ekibimizle, web sitesi ve mobil uygulama geliştirmeden marka ve
+        sosyal medya yönetimine, e-ticaret çözümlerinden CRM sistemlerine kadar
+        geniş bir yelpazede hizmet sunuyoruz. Müşteri odaklı yaklaşımımızla, her
+        projede işinizin benzersiz ihtiyaçlarına uygun stratejiler
+        geliştiriyoruz. Yaratıcılığımızı ve teknik bilgimizi birleştirerek,
+        işinizin dijital dünyada en iyi şekilde temsil edilmesini sağlıyoruz.
+      </p>
     </section>
   );
 }
