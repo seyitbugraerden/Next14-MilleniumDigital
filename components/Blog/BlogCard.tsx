@@ -15,7 +15,7 @@ const BlogCard: React.FC<any> = ({ className }) => {
         <span className="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg px-2 py-1 text-white text-[10px]">
           Technology
         </span>
-        <h2 className="mt-4 font-bold text-2xl">What's New</h2>
+        <h2 className="mt-4 font-bold text-2xl">Whats New</h2>
         <p className="text-black leading-7 py-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aut
           iure maiores voluptatem iste accusamus dignissimos quidem consequatur

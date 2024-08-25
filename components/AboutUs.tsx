@@ -4,7 +4,7 @@ function AboutUs() {
   return (
     <section className="pt-24">
       <h4 className="text-center">Biz Kimiz?</h4>
-      <p className="text-kg text-primary lg:max-w-6xl mx-auto mt-10 text-center text-justify">
+      <p className="text-kg text-primary lg:max-w-6xl mx-auto mt-10 text-justify">
         Millenium Digital , dijital dünyada fark yaratmak isteyen işletmelere
         yenilikçi ve kapsamlı çözümler sunan bir ajanstır. Amacımız,
         müşterilerimizin dijital varlıklarını güçlendirmek ve büyümelerini
