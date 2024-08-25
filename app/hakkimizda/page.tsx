@@ -5,7 +5,7 @@ function Hakkimizda() {
   return (
     <>
       <section className="flex flex-row py-12 h-screen overflow-hidden">
-        <div className="bg-[#e3e3e3] my-auto lg:translate-x-12 p-14 flex-1 col-span-2 lg:col-span-1 overflow-hidden">
+        <div className="bg-white my-auto lg:translate-x-12 p-14 flex-1 col-span-2 lg:col-span-1 overflow-hidden">
           <h4>Hakkımızda</h4>
           <p className="text-xs 2xl:text-xl">
             <strong>Millenium Digital</strong> , dijital dünyada fark yaratmak
