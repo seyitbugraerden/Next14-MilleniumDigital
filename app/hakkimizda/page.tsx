@@ -4,16 +4,16 @@ import Image from "next/image";
 function Hakkimizda() {
   return (
     <>
-      <section className="grid grid-cols-2 py-12 h-screen">
-        <div className="bg-[#e3e3e3] flex flex-col justify-center my-auto lg:translate-x-12 p-14 col-span-2 lg:col-span-1 overflow-hidden">
+      <section className="flex flex-row py-12 h-screen overflow-hidden">
+        <div className="bg-[#e3e3e3] my-auto lg:translate-x-12 p-14 flex-1 col-span-2 lg:col-span-1 overflow-hidden">
           <h4>Hakkımızda</h4>
-          <p>
+          <p className="text-xs 2xl:text-xl">
             <strong>Millenium Digital</strong> , dijital dünyada fark yaratmak
             isteyen işletmelere yenilikçi ve kapsamlı çözümler sunan bir
             ajanstır. Amacımız, müşterilerimizin dijital varlıklarını
             güçlendirmek ve büyümelerini sağlamaktır.
           </p>
-          <p>
+          <p className="text-xs 2xl:text-xl">
             Uzman ekibimizle, web sitesi ve mobil uygulama geliştirmeden marka
             ve sosyal medya yönetimine, e-ticaret çözümlerinden CRM sistemlerine
             kadar geniş bir yelpazede hizmet sunuyoruz. Müşteri odaklı
@@ -22,7 +22,7 @@ function Hakkimizda() {
             birleştirerek, işinizin dijital dünyada en iyi şekilde temsil
             edilmesini sağlıyoruz.
           </p>
-          <p>
+          <p className="text-xs 2xl:text-xl">
             <strong>Millenium Digital</strong> olarak, işinizin dijital dünyada
             sürdürülebilir bir başarı yakalaması için gereken tüm desteği
             sağlıyoruz. Bizimle çalışarak, dijital dönüşüm yolculuğunuzda
@@ -31,23 +31,23 @@ function Hakkimizda() {
           <div className="flex justify-around items-center mt-12">
             <div>
               <div className="line"></div>
-              <h3 className="text-4xl text-hover">12</h3>
-              <p>Yıllık Tecrübe</p>
+              <h3 className="text-xs lg:text-4xl text-hover">12</h3>
+              <p className="text-xs 2xl:text-xl">Yıllık Tecrübe</p>
             </div>
             <div>
               <div className="line"></div>
-              <h3 className="text-4xl text-hover">257</h3>
-              <p>Mutlu Müşteri</p>
+              <h3 className="text-xs lg:text-4xl text-hover">257</h3>
+              <p className="text-xs 2xl:text-xl">Mutlu Müşteri</p>
             </div>
             <div>
               <div className="line"></div>
-              <h3 className="text-4xl text-hover">257</h3>
-              <p>Tamamlanmış Proje</p>
+              <h3 className="text-xs lg:text-4xl text-hover">257</h3>
+              <p className="text-xs 2xl:text-xl">Tamamlanmış Proje</p>
             </div>
           </div>
         </div>
-        <div className="hidden lg:block">
-          <Image src={about} alt="about-us" className="h-full object-cover" />
+        <div className="hidden lg:block flex-1 h-screen">
+          <Image src={about} alt="about-us" className="h-screen object-cover" />
         </div>
       </section>
     </>

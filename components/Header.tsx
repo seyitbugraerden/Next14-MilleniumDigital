@@ -22,11 +22,11 @@ function Header() {
           <Image src={Logo} alt="brand" width={300} />
         </div>
         <div className="flex flex-col gap-12">
-          <nav className="flex flex-col gap-6">
+          <nav className="flex flex-col gap-3 2xl:gap-6">
             <div>
               <Link
                 href="/"
-                className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${
+                className={`pe-[24px] ps-[50px] py-2 2xl:py-3 hover:bg-hover transition duration-500 ${
                   routerLink[1] === "" ? "bg-hover" : ""
                 }`}
               >
@@ -36,7 +36,7 @@ function Header() {
             <div>
               <Link
                 href="/hakkimizda"
-                className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${
+                className={`pe-[24px] ps-[50px] py-2 2xl:py-3 hover:bg-hover transition duration-500 ${
                   routerLink[1] === "hakkimizda" ? "bg-hover" : ""
                 }`}
               >
@@ -46,7 +46,7 @@ function Header() {
             <div>
               <Link
                 href="/hizmetlerimiz"
-                className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${
+                className={`pe-[24px] ps-[50px] py-2 2xl:py-3 hover:bg-hover transition duration-500 ${
                   routerLink[1] === "hizmetlerimiz" ? "bg-hover" : ""
                 }`}
               >
@@ -55,16 +55,8 @@ function Header() {
             </div>
             <div>
               <Link
-                href="#"
-                className="pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500"
-              >
-                Portfölyo
-              </Link>
-            </div>
-            <div>
-              <Link
                 href="/iletisim"
-                className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${
+                className={`pe-[24px] ps-[50px] py-2 2xl:py-3 hover:bg-hover transition duration-500 ${
                   routerLink[1] === "iletisim" ? "bg-hover" : ""
                 }`}
               >
@@ -72,14 +64,14 @@ function Header() {
               </Link>
             </div>
           </nav>
-          <nav className="flex flex-col gap-6">
-            <h2 className="pe-[24px] ps-[50px] py-3 text-hover transition duration-500">
+          <nav className="flex flex-col gap-3 2xl:gap-6">
+            <h2 className="pe-[24px] ps-[50px] py-2 2xl:py-3 text-hover transition duration-500">
               Başlıca Hizmetler
             </h2>
             <div>
               <Link
                 href="/hizmetlerimiz/web-site-cozumleri"
-                className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${
+                className={`pe-[24px] ps-[50px] py-2 2xl:py-3 hover:bg-hover transition duration-500 ${
                   routerLink[2] === "web-site-cozumleri" ? "bg-hover" : ""
                 }`}
               >
@@ -89,7 +81,7 @@ function Header() {
             <div>
               <Link
                 href="/hizmetlerimiz/mobil-uygulama-cozumleri"
-                className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${
+                className={`pe-[24px] ps-[50px] py-2 2xl:py-3 hover:bg-hover transition duration-500 ${
                   routerLink[2] === "mobil-uygulama-cozumleri" ? "bg-hover" : ""
                 }`}
               >
@@ -99,7 +91,7 @@ function Header() {
             <div>
               <Link
                 href="/hizmetlerimiz/profesyonel-marka-yonetimi"
-                className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${
+                className={`pe-[24px] ps-[50px] py-2 2xl:py-3 hover:bg-hover transition duration-500 ${
                   routerLink[2] === "profesyonel-marka-yonetimi"
                     ? "bg-hover"
                     : ""
@@ -111,7 +103,7 @@ function Header() {
             <div>
               <Link
                 href="/hizmetlerimiz/sosyal-medya-yonetimi#"
-                className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${
+                className={`pe-[24px] ps-[50px] py-2 2xl:py-3 hover:bg-hover transition duration-500 ${
                   routerLink[2] === "sosyal-medya-yonetimi" ? "bg-hover" : ""
                 }`}
               >
@@ -121,7 +113,7 @@ function Header() {
             <div>
               <Link
                 href="/hizmetlerimiz/e-ticaret-cozumleri"
-                className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${
+                className={`pe-[24px] ps-[50px] py-2 2xl:py-3 hover:bg-hover transition duration-500 ${
                   routerLink[2] === "e-ticaret-cozumleri" ? "bg-hover" : ""
                 }`}
               >
@@ -131,7 +123,7 @@ function Header() {
             <div>
               <Link
                 href="/hizmetlerimiz/crm-sistemleri"
-                className={`pe-[24px] ps-[50px] py-3 hover:bg-hover transition duration-500 ${
+                className={`pe-[24px] ps-[50px] py-2 2xl:py-3 hover:bg-hover transition duration-500 ${
                   routerLink[2] === "crm-sistemleri" ? "bg-hover" : ""
                 }`}
               >
