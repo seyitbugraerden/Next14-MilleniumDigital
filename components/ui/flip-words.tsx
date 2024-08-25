@@ -4,7 +4,7 @@ import { AnimatePresence, motion, LayoutGroup } from "framer-motion";
 
 export const FlipWords = ({
   words,
-  duration = 5000,
+  duration = 4600,
   className,
 }: {
   words: string[];
@@ -66,7 +66,6 @@ export const FlipWords = ({
             initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{
-              delay: index * 0.08,
               duration: 0.4,
             }}
             className="inline-block"
