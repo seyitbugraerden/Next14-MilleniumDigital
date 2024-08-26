@@ -2,14 +2,18 @@ import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import {
   IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
   IconClipboardCopy,
   IconFileBroken,
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
-
+import mey from "@/public/FireShot/mey.png";
+import gazbir from "@/public/FireShot/gazbir.png";
+import trb from "@/public/FireShot/trb.png";
+import eud from "@/public/FireShot/eud.png";
+import doris from "@/public/FireShot/doris.png";
+import alas from "@/public/FireShot/alas.png";
+import atlas from "@/public/FireShot/atlas.png";
 export function BentoGridDemo() {
   return (
     <section>
@@ -41,51 +45,37 @@ const Skeleton: React.FC<any> = ({ link }) => (
 const items = [
   {
     title: "Doris",
-    header: (
-      <Skeleton link="https://i.ibb.co/P6yfXn8/Fire-Shot-Capture-010-DORIS-www-dorisfire-com.png" />
-    ),
+    header: <Skeleton link={doris} />,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Alas Fire",
-    header: (
-      <Skeleton link="https://i.ibb.co/3pVs073/Fire-Shot-Capture-011-Alas-Fire-Technologies-www-alasfire-com.png" />
-    ),
+    header: <Skeleton link={alas} />,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "TRB",
-    header: (
-      <Skeleton link="https://i.ibb.co/NxZ49KY/Fire-Shot-Capture-012-TRB-International-Uluslararas-Belgelendirme-trb-com-tr.png" />
-    ),
+    header: <Skeleton link={trb} />,
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Gazbir",
-    header: (
-      <Skeleton link="https://i.ibb.co/XXYrW5y/Fire-Shot-Capture-013-GAZB-R-T-rkiye-Do-al-Gaz-Da-t-c-lar-Birli-i-www-gazbir-org-tr.png" />
-    ),
+    header: <Skeleton link={gazbir} />,
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "EUD",
-    header: (
-      <Skeleton link="https://i.ibb.co/kgD3Sqp/Fire-Shot-Capture-014-Elektrik-reticileri-Derne-i-E-D-www-eud-org-tr.png" />
-    ),
+    header: <Skeleton link={eud} />,
     icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "MEY Design",
-    header: (
-      <Skeleton link="https://i.ibb.co/zrmLPK7/Fire-Shot-Capture-017-MEY-DESIGN-www-meydesign-com-tr.png" />
-    ),
+    header: <Skeleton link={mey} />,
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Atlas Grup",
-    header: (
-      <Skeleton link="https://i.ibb.co/bbTbrC8/Fire-Shot-Capture-015-Atlas-Grup-www-atlasgrup-ik-com.png" />
-    ),
+    header: <Skeleton link={atlas} />,
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
 ];
