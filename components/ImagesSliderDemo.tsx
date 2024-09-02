@@ -8,9 +8,9 @@ import Link from "next/link";
 export function ImagesSliderDemo() {
   const words = ["Website", "İçerik", "Reklam"];
   const images = [
-    "https://cdn.mypanel.link/44f480/s4csgiysyzihw8bm.jpeg",
-    "https://static.tildacdn.com/tild3738-3035-4632-b737-643563656236/banner-authors-and-p.jpg",
-    "https://wallbox.ru/wallpapers/main/201445/ce3b4d4b65ea7e8.jpg",
+    "https://picsum.photos/1920/800",
+    "https://picsum.photos/1920/800",
+    "https://picsum.photos/1920/800",
   ];
   return (
     <ImagesSlider className="py-[30vh] object-cover" images={images}>
