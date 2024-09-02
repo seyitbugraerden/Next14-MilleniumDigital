@@ -8,9 +8,9 @@ import Link from "next/link";
 export function ImagesSliderDemo() {
   const words = ["Website", "İçerik", "Reklam"];
   const images = [
-    "https://picsum.photos/1920/800",
-    "https://picsum.photos/1920/800",
-    "https://picsum.photos/1920/800",
+    "https://picsum.photos/1080/800",
+    "https://picsum.photos/1080/800",
+    "https://picsum.photos/1080/800",
   ];
   return (
     <ImagesSlider className="py-[30vh] object-cover" images={images}>
