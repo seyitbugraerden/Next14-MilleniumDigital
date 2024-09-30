@@ -99,12 +99,13 @@ Useful resources and dependencies that are used in Modern Portfolio.
 
 ### Production Dependencies
 
-- [@next/font](https://www.npmjs.com/package/@next/font): ^15.0
-- [next](https://www.npmjs.com/package/next): 15.0
-- [react](https://www.npmjs.com/package/react): 19.0
-- [react-countup](https://www.npmjs.com/package/react-countup): ^6.5.3
-- [react-dom](https://www.npmjs.com/package/react-dom): 19.0
-- [lucide-react](https://www.npmjs.com/package/lucide-react): ^0.441.0
+- [@tabler/icons-react](https://www.npmjs.com/package/@next/font): ^3.10
+- [framer-motion](https://www.npmjs.com/package/next): 11.3.8
+- [framer-motion](https://www.npmjs.com/package/next): 18.0
+- [react](https://www.npmjs.com/package/react): 18.0
+- [hamburger-react](https://www.npmjs.com/package/react-countup): ^2.5.1
+- [react-dom](https://www.npmjs.com/package/react-dom): 18.0
+- [lucide-react](https://www.npmjs.com/package/lucide-react): ^2.4.0
 
 ### Development Dependencies
 
@@ -112,7 +113,7 @@ Useful resources and dependencies that are used in Modern Portfolio.
 - [@types/react](https://www.typescriptlang.org/): ^18
 - [@types/react-dom](https://www.typescriptlang.org/): ^18
 - [eslint](https://www.npmjs.com/package/eslint): ^8
-- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 15.0
+- [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 14.2.4
 - [postcss](https://www.npmjs.com/package/postcss): ^8
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.4.1
 - [typescript](https://www.typescriptlang.org/): ^5
